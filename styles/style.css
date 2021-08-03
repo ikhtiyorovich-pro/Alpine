@@ -14,18 +14,20 @@ body {
 	padding: 0;
 }
 .big-box {
-	width: 100%;
-	max-width: 1540px;
-	margin: 0 auto;
 	background-image: url(/images/background-img.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-size: 1540px;
 }
 /*=====================================================header=================================================================*/
 .container {
 	width: 100%;
 	max-width: 1140px;
 	padding: 0px 20px;
+}
+.header-section {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 .header-item {
 	margin: 0;
@@ -477,35 +479,45 @@ body {
 }
 /* ========================================================================================================================== */
 .site-footer {
-	position: relative;
-	width: 100%;
-	max-width: 1540px;
-	height: 540px;
 	background-image: url(../images/footer-img.png);
-	background-size: 1540px 540px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+.footer-section {
+	width: 100%;
+	max-width: 1382px;
 	margin: 0 auto;
-	margin-top: -50px;
 }
 
+.footer-item-wrapper {
+	width: 100%;
+	max-width: 1382px;
+	margin: 0 auto;
+}
 .footer-item {
-	width: 1382px;
+	width: 100%;
 	display: flex;
 	margin: 0 auto;
-	margin-left: 59px;
+	justify-content: space-around;
+
 	padding-top: 150px;
 	padding-left: 0;
 }
-
 .circle-item {
-	position: absolute;
+	position: relative;
 	z-index: 10;
-	width: 117px;
-	height: 117px;
-	margin: 0;
-	margin-top: 20px;
-	padding: 0;
 	list-style: none;
-	left: 710px;
+}
+.circle-span {
+	position: absolute;
+	width: 127px;
+	height: 127px;
+	top: -50px;
+	left: 607px;
+	list-style: none;
 	background-color: #ff1640;
 	border-radius: 50%;
 }
@@ -576,8 +588,8 @@ body {
 .footer-end-heading-item {
 	width: 410px;
 	margin: 0 auto;
-	margin-top: 80px;
-	margin-left: 550px;
+	margin-top: 50px;
+	margin-left: 480px;
 	padding: 0;
 	list-style: none;
 	background-color: white;
